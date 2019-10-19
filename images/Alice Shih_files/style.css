@@ -1,0 +1,134 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    background-color: #ddd;
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+h1{
+    font-size: 50px;
+    line-height: 1;
+    padding: 50px 0;
+    text-align: center;
+}  
+.container{
+    display:grid;
+    grid-template-columns:30px auto 30px;
+    grid-template-rows: 30px 300px 400px 50px;
+    row-gap: 30px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+  
+nav li{
+    display:inline-block;
+    padding-right:20px;
+}
+
+nav a{
+    color: #78726a;
+    font-weight: bold;
+    text-decoration: none;
+}
+  
+nav a:hover{
+    text-decoration: underline; 
+}
+  
+.nav{
+   grid-column:1/4;
+   grid-row:0/ span 1;
+   text-align: right;
+   align-self: center;
+   padding-top:60px;
+   padding-bottom:20px;
+   /*Provided*/
+   background-color:white;
+}
+ 
+header{
+    background-attachment: fixed; /* Parallax effect */
+    background-image: url(../images/alice1.jpg);      /* Your code here - Link to header.jpg in the images folder */
+    background-position: center;  /* Parallax effect */
+    background-repeat: no-repeat; /* Parallax effect */
+    background-size: cover;       /* Parallax effect */
+    color: white;
+    height: 400px;                /* Parallax effect */
+    
+    /*Your code here - cover the entire row*/
+    grid-column: 1/-1;
+    grid-row-start: 2;
+    grid-row-end: span 1;
+}
+
+header p{
+    color: white;
+    font-size: 24px;
+    padding: 0 100px;
+    text-align: center;
+}
+  
+.header {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
+}
+
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+    padding-left:2%;
+}
+form div{
+    display:inline-block;
+    width: 90%;
+}
+button.btn{             /*Why couldn't I just use button?*/
+    display: block;
+    margin: 0 auto;
+}
+.contact1
+{
+    grid-column:1/-1;
+    grid-row:2/3;
+    text-align:center;
+    padding: 50px;
+    background-color:palevioletred;
+    font-size:30px;
+}
+.contactform{
+    grid-column:2/3;
+    grid-row:3/4;
+    text-align:center;
+}
+
+.body1{
+    background-color: white;
+    grid-column:1/span 3;
+    grid-row:3/4;
+    text-align: center;
+}
+
+footer{
+    background-color: paleturquoise;
+    grid-column:1/-1;
+    grid-row:4/5;
+    text-align:center;
+}
+
+.work1{
+    background-color:palegoldenrod;
+    grid-column:1/-1;
+    grid-row:2/3;
+    text-align:center;
+    align-content: normal;
+}
