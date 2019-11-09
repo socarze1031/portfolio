@@ -11,7 +11,7 @@
 </head>
 
 <body>
-        <div class="skip"><a href="#maincontent">Skip to Main Content</a></div>
+    <div class="skip"><a href="#maincontent">Skip to Main Content</a></div>
     <div class="container">
         <header class="logo">
             <a href="index.html"><img class="logo-img" src="images/alice_logo.png"></a>
@@ -19,32 +19,34 @@
 
         <nav>
             <div class="nav">
-                <ul>
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <ul class="menu">
                     <li><a href="contact.html"> CONTACT </a></li>
                     <li><a href="portfolio.html">WORK</a></li>
-                    <li><a href="hobbies.html">HOBBIES</a></li>
+                    <li><a href="hobbies.html" class="active">HOBBIES</a></li>
                     <li><a href=" index.html">ABOUT</a></li>
 
                 </ul>
             </div>
         </nav>
-        <div id = "maincontent" class="landing" style="background-image: url(images/landing2.jpg)">
-                <h1>HERE IS MY LIFE! </h1>
-                <p> I love traveling, how about you :)?</p>
-    
-            </div>
+        <div id="maincontent" class="landing" style="background-image: url(images/hobbies_background.jpg)">
+            <h1 style="color:white;">HERE IS MY LIFE! </h1>
+            <p style="color:white;"> I love traveling, how about you :)?</p>
+
+        </div>
         <div class="gallery">
-            <div class = "column">
+            <div class="column">
                 <img src="images/gallery1.jpg">
                 <img src="images/gallery2.jpg">
                 <img src="images/gallery3.jpg">
             </div>
-            <div class = "column">
+            <div class="column">
                 <img src="images/gallery4.jpg">
                 <img src="images/gallery5.jpg">
                 <img src="images/gallery6.jpg">
             </div>
-            <div class = "column">
+            <div class="column">
                 <img src="images/gallery7.jpg">
                 <img src="images/gallery8.jpg">
                 <img src="images/gallery9.jpg">
