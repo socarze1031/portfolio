@@ -10,84 +10,88 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Alice Shih</title>
 </head>
+<main>
 
-<body>
-    <div class="skip"><a href="#maincontent">Skip to Main Content</a></div>
-    <div class="container">
-        <header class="logo">
-            <a href="index.html"><img class="logo-img" src="images/alice_logo.png"></a>
-        </header>
+    <body>
+        <div class="skip"><a href="#maincontent">Skip to Main Content</a></div>
+        <div class="container">
+            <header class="logo">
+                <a href="index.html"><img class="logo-img" src="images/alice_logo.png" alt="alice_logo"></a>
+            </header>
 
-        <nav>
-            <div class="nav">
-                <input class="menu-btn" type="checkbox" id="menu-btn" />
-                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-                <ul class="menu">
-                    <li><a href="contact.html" class="active"> CONTACT </a></li>
-                    <li><a href="portfolio.html">WORK</a></li>
-                    <li><a href="hobbies.html">HOBBIES</a></li>
-                    <li><a href=" index.html">ABOUT</a></li>
+            <nav>
+                <div class="nav">
+                    <input class="menu-btn" type="checkbox" id="menu-btn" />
+                    <label class="menu-icon" for="menu-btn">empty<span class="navicon">.</span></label>
+                    <ul class="menu">
+                        <li><a href="contact.html" class="active"> CONTACT </a></li>
+                        <li><a href="portfolio.html">WORK</a></li>
+                        <li><a href="hobbies.html">HOBBIES</a></li>
+                        <li><a href=" index.html">ABOUT</a></li>
 
-                </ul>
+                    </ul>
+                </div>
+            </nav>
+
+            <div id="maincontent" class="landing" style="background-image: url(images/connect_background.jpg)">
+                <h1>Let's Connect! </h1>
+                <br />
+                <p> Email me at sanhua@umich.edu <br /> or leave a message below!</p>
             </div>
-        </nav>
 
-        <div id="maincontent" class="landing" style="background-image: url(images/connect_background.jpg)">
-            <h1>Let's Connect! </h1>
-            <br />
-            <p> Email me at sanhua@umich.edu <br /> or leave a message below!</p>
-        </div>
+            <div class="contactform">
+                <div tabindex="0" class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/social_media.jpg" alt="social_media">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1 style="font-size:15px;">Follow me on social media!</h1>
+                            <a href="https://www.instagram.com/alice.shih/" class="fa fa-instagram"><span
+                                    style="color:black;">!</span></a>
+                            <a href="https://www.linkedin.com/in/anhua-alice-shih/" class="fa fa-linkedin">!</a>
 
-        <div class="contactform">
-            <div tabindex = "0" class="flip-card">
-                <div  class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/social_media.jpg" alt="social_media">
-                    </div>
-                    <div class="flip-card-back">
-                        <h1 style ="font-size:15px; color:white;">Follow me on social media!</h1>
-                        <a href="https://www.instagram.com/alice.shih/" class="fa fa-instagram"></a>
-                        <a href="https://www.linkedin.com/in/anhua-alice-shih/" class="fa fa-linkedin"></a>
-
+                        </div>
                     </div>
                 </div>
+                <form action="https://formspree.io/xleeekzd" method="POST">
+                    <br />
+                    <h2 class="contact_title">Leave a message...</h2></br>
+                    <p style="font-size:11px;"> Tell me about yourself! What took you to my website? What are you
+                        interested in?
+                        What do you do in your free time? Do you have any questions for me? </p>
+                    <br />
+                    <br />
+
+                    <label>
+                        First Name:
+                        <input type="text" name="_fname">
+                    </label>
+                    <br /><br />
+                    <label>
+                        Last Name:
+                        <input type="text" name="_lname">
+                    </label>
+                    <br /><br />
+                    <label>
+                        Your email:
+                        <input type="text" name="_replyto">
+                    </label>
+                    <br /><br />
+                    <label>
+                        Your message:
+                        <textarea name="message"></textarea>
+                    </label>
+
+                    <!-- your other form fields go here -->
+                    <br />
+                    <button type="submit">Send</button>
+                </form>
             </div>
-            <form action="https://formspree.io/xleeekzd" method="POST">
-                <br />
-                <h2 class="contact_title">Leave a message...</h2></br>
-                <p style="font-size:11px;"> Tell me about yourself! What took you to my website? What are you interested in?
-                    What do you do in your free time? Do you have any questions for me? </p>
-                <br />
-                <br />
 
-                <label>
-                    First Name:
-                    <input type="text" name="_fname">
-                </label>
-                <br /><br />
-                <label>
-                    Last Name:
-                    <input type="text" name="_lname">
-                </label>
-                <br /><br />
-                <label>
-                    Your email:
-                    <input type="text" name="_replyto">
-                </label>
-                <br /><br />
-                <label>
-                    Your message:
-                    <textarea name="message"></textarea>
-                </label>
-
-                <!-- your other form fields go here -->
-                <br />
-                <button type="submit">Send</button>
-            </form>
+            <footer>
+                <p> @ Alice Shih 2019 </p>
+            </footer>
         </div>
-
-        <footer>
-            <p> @ Alice Shih 2019 </p>
-        </footer>
-    </div>
+</main>
 </body>
