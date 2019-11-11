@@ -221,11 +221,10 @@ footer{
 .landing h1{
     padding-top:100px;
     
-
 }
 
-.landing p{
-    font-size: 20px;
+.landing h2{
+    font-size: 25px;
 }
 .body1{
     background-color: white;
@@ -300,29 +299,34 @@ footer{
     row-gap:10px;
 }
 
-.projects{
-    background-color: white;
-    grid-column:2/2;
-    grid-row:3/4;
-    padding: 0 4px;
-    
-}
 
-.projects img{
+.body1 img{
     width:300px;
     height:300px;
 }
 
 #projects1{
     grid-row:3/4;
+    background-color: white;
+    grid-column:2/2;
+    padding: 0 4px;
+    
 }
 
 #projects2{
     grid-row:4/5;
+    background-color: white;
+    grid-column:2/2;
+    padding: 0 4px;
+    
 }
 
 #projects3{
     grid-row:5/6;
+    background-color: white;
+    grid-column:2/2;
+    padding: 0 4px;
+    
 }
 
 
@@ -512,21 +516,22 @@ label {
   grid-column:2/5;   
  
  }
- .projects{
-     background-color: white;
- }
+
  
  #projects1{
+     background-color: white;
      grid-column: 2/5;
      grid-row:3/4;
  }
  
  #projects2{
+    background-color: white;
      grid-column:2/3;
      grid-row:4/5;
  }
  
  #projects3{
+    background-color: white;
      grid-column:4/5;
      grid-row:4/5;
  }
@@ -598,22 +603,22 @@ li a {
  grid-column:3/5;   
 
 }
-.projects{
-    background-color: white;
-    grid-column:2/ span 2;
-}
+
 
 #projects1{
     grid-row:3/4;
     grid-column:2/4;
+    background-color: white;
 }
 
 #projects2{
     grid-column:3/5;
     grid-row:4/5;
+    background-color: white;
 }
 
 #projects3{
+    background-color: white;
     grid-row:5/6;
     grid-column:2/4;
 }
@@ -650,17 +655,45 @@ li a {
     html{
         scroll-behavior: auto; 
     }
+
     .skip a{
-        -webkit-transition:0s; 
+        background: white;
+        left: 0;
+        padding: 6px;
+        position: absolute;
+        top: -40px;
+        -webkit-transition: 0s;
         transition:0s;
+        z-index: 1;
     }
     .skip a:focus{
       top:0;
     }
     .flip-card-inner {
-    transition: 0s;
+    transition: transform 0s;
     }
 
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto; /* Removes scroll animation */
+  }
+
+  .skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition:0s; /* Your code here - set to default setting */
+    transition:0s;/* Your code here - set to default setting */
+    z-index: 1;
+  }
+
+  .skip a:focus{
+    top:0;
+  }
 }
 
 
