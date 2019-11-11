@@ -420,7 +420,9 @@ label {
     width:300px;
     height:300px;
 }
-  
+/**** FLIP CARD INSPIRED BY W3 SCHOOL ****/
+
+
 /** social media icon **/
 .fa {
     padding: 20px;
@@ -445,6 +447,9 @@ label {
     background: #d4507c;
     color: white;
   }
+
+
+/****SOCIAL MEDIA ICON INSPIRED BY W3SCHOOL*****/
 /********************CONTACT*********************/
 
 
@@ -514,10 +519,9 @@ label {
  
  #nav2{
   grid-column:2/5;   
- 
  }
 
- 
+
  #projects1{
      background-color: white;
      grid-column: 2/5;
@@ -571,9 +575,6 @@ li a {
 /*******HOBBIES STYLE *******/
 /****GALLERY*****/
 
-.gallery{
-    flex-direction:row;
-}
 
 
 .column {
@@ -675,26 +676,6 @@ li a {
 
 }
 
-@media screen and (prefers-reduced-motion: reduce){
-  html{
-      scroll-behavior: auto; /* Removes scroll animation */
-  }
-
-  .skip a{
-    background: white;
-    left: 0;
-    padding: 6px;
-    position: absolute;
-    top: -40px;
-    -webkit-transition:0s; /* Your code here - set to default setting */
-    transition:0s;/* Your code here - set to default setting */
-    z-index: 1;
-  }
-
-  .skip a:focus{
-    top:0;
-  }
-}
 
 
   
